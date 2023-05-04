@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+/*reseteo general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: karla, sans-serif;
+    background-color:  hsl(204, 43%, 93%);
+    padding: 100px 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    overflow: hidden;
+}
+
+.item{
+    padding: 30px;
+}
+
+.item-1{
+    background-color: white;
+}
+
+.item-1 h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.item-1 h3{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.item-1 p{
+    color: hsl(218, 22%, 67%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.item-2 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.item-2 h3{
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+.item-2 p{
+    color: hsl(204, 43%, 93%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.item-2 p span {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.item-3 {
+    background-color: #4abdbd;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: karla;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 4px 10px 1px #00000024;
+    color: #fff;
+    border: none;
+}
+
+.item-3 h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+li {
+    color:hsl(204, 43%, 93%);
+    padding-bottom: 4px;
+    font-size: 16px;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item-1{
+        grid-area: 1/ 1/ 2/ 3;
+    }
+}
+
+
